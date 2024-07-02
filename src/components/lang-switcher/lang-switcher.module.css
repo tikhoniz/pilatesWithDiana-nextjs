@@ -1,0 +1,26 @@
+.LangSwitcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* color: var(--button-color); */
+  text-transform: uppercase;
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  opacity: 0.7;
+  transition: var(--transition-time);
+
+  &:hover {
+    opacity: 1;
+    transition: var(--transition-time);
+  }
+
+  & svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+/* .button {
+  width: 2rem;
+} */

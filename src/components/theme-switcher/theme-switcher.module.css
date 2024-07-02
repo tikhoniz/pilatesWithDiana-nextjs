@@ -1,0 +1,46 @@
+.ThemeSwitcher {
+  padding: 3px;
+  width: fit-content;
+  display: flex;
+  border-radius: 9999px;
+  border: 1px solid var(--inverted-light-grey);
+}
+
+.button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+
+  & svg {
+    opacity: 0.6;
+    transition: var(--transition-time);
+    -webkit-transition: var(--transition-time);
+    -moz-transition: var(--transition-time);
+    -ms-transition: var(--transition-time);
+    -o-transition: var(--transition-time);
+  }
+}
+
+.button:hover svg {
+  opacity: 1;
+  transition: var(--transition-time);
+  -webkit-transition: var(--transition-time);
+  -moz-transition: var(--transition-time);
+  -ms-transition: var(--transition-time);
+  -o-transition: var(--transition-time);
+}
+
+.active {
+  background-color: var(--inverted-light-grey);
+
+  & svg {
+    opacity: 1;
+  }
+}

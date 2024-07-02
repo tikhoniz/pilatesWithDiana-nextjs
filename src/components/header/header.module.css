@@ -1,0 +1,14 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: var(--inverted-box-shadow);
+  background-color: var(--inverted-header-bg-color);
+}
+
+.switchers {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
