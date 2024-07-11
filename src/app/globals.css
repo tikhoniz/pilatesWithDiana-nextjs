@@ -103,11 +103,15 @@ a {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   flex-grow: 1;
 }
 
 .visually-hidden {
   position: absolute;
+  display: none;
   width: 1px;
   height: 1px;
   margin: -1px;

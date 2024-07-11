@@ -1,4 +1,6 @@
 .main {
+  position: relative;
+  flex-grow: 1;
 }
 
 /* Enable hover only on non-touch devices */
