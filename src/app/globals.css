@@ -61,7 +61,7 @@
 
   /* background */
   --inverted-bg-color: #ffffff;
-  --inverted-header-bg-color: #fbfbfb;
+  --inverted-header-bg-color: transparent;
   --inverted-light-gray-bg: #e6e6e6;
 
   /* shadow */
@@ -69,6 +69,17 @@
 
   /* animation */
   --transition-time: 300ms;
+
+  /* header */
+  --height-header: 4rem;
+}
+
+.dark {
+  --inverted-bg-color: #0f172a;
+  --inverted-header-bg-color: #16213c;
+  --inverted-text-color: #dfdbe7;
+  --inverted-light-grey: #2e2e2e;
+  --inverted-box-shadow: 0 10px 35px rgba(14, 14, 14, 0.2);
 }
 
 * {
@@ -124,10 +135,8 @@ a {
   overflow: hidden;
 }
 
-.dark {
-  --inverted-bg-color: #0f172a;
-  --inverted-header-bg-color: #16213c;
-  --inverted-text-color: #dfdbe7;
-  --inverted-light-grey: #2e2e2e;
-  --inverted-box-shadow: 0 10px 35px rgba(14, 14, 14, 0.2);
+.absolute-centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

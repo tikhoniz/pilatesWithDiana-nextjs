@@ -1,16 +1,13 @@
 import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
 import ThemeProvider from '@/providers/theme-provider/theme-provider';
+import { GenerateMetadataProps } from '@/types/metadata';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 
 const inter = Inter({ subsets: ['latin'] });
-
-interface GenerateMetadataProps {
-  params: { lang: string };
-}
 
 interface RootLayoutProps {
   children: React.ReactNode;

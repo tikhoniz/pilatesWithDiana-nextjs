@@ -1,7 +1,11 @@
 {
 	"Metadata": {
 		"title": "Pilates with Diana | Workouts at your home",
-		"description": "Pilates training in any place convenient for you. 'Live' group and personal classes. For any age and skill level."
+		"description": "Pilates training in any place convenient for you. 'Live' group and personal classes. For any age and skill level.",
+		"homePage": {
+			"title": "Online classes from anywhere in the world in the studio 'Pilates with Diana'",
+			"description": ""
+		}
 	},
 	"NotFoundPage": {
 		"title": "404",
@@ -11,7 +15,10 @@
 		"home": "Home"
 	},
 	"HomePage": {
-		"title": "Oнлайн занятия из любой точки мира в студии 'Move with Diana'"
+		"hero": {
+			"title": "Pilates With Diana",
+			"subtitle": "Online studio"
+		}
 	},
 	"BlogPage": {
 		"title": "Blog"

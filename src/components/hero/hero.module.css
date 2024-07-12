@@ -1,6 +1,7 @@
 .Hero {
+  z-index: -100;
   position: absolute;
-  top: 0;
+  top: calc(-1 * var(--height-header));
   bottom: 0;
   left: 0;
   right: 0;
@@ -8,5 +9,34 @@
 
 .image {
   object-fit: cover;
-  z-index: -100;
+}
+
+.titleBlock {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: clamp(0.5rem, 1vw + 0.1rem, 1rem);
+
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.title {
+  /* color: white; */
+  font-size: clamp(2rem, 4vw + 1rem, 10rem);
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  /* color: $primary; */
+  font-size: clamp(0rem, 1vw + 0.4rem, 8rem);
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    white-space: nowrap;
+  }
 }

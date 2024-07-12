@@ -1,14 +1,23 @@
 import Hero from '@/components/hero/hero';
-import { useTranslations } from 'next-intl';
+import { GenerateMetadataProps } from '@/types/metadata';
+import { getTranslations } from 'next-intl/server';
 import cls from './page.module.css';
 
-export default function Home() {
-  const t = useTranslations('HomePage');
+export async function generateMetadata({
+  params: { lang },
+}: GenerateMetadataProps) {
+  const t = await getTranslations({ lang, namespace: 'Metadata' });
 
+  return {
+    title: t('homePage.title'),
+    description: t('homePage.description'),
+  };
+}
+
+export default function Home() {
   return (
     <main className={cls.main}>
       <Hero />
-      <h1 className="visually-hidden">{t('title')}</h1>
     </main>
   );
 }

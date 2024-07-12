@@ -1,8 +1,11 @@
 .Header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 1rem;
+  height: var(--height-header);
+  /* padding: 1rem; */
+  padding: 0 2rem;
   box-shadow: var(--inverted-box-shadow);
   background-color: var(--inverted-header-bg-color);
 }
